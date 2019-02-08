@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '10'
+script:
+- npm run build
+- npm run test
+deploy:
+  provider: npm
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true
+    repo: joernb/redux-prefabs-contentful
+  email:
+    secure: WsaC7qi5znW13S1wluY05CW7ttX1phBZx0eDTAvFDDvVGLth4z2RdD7jAp4PVO7Efv933K9zJu6kkTq4lh6ft77HfLzt/0aEaXryIkvLCBsTcEaFUJQkHrUS/GFZfrk4oXbPB5NNFSv4LWKW7XLOnS+cuFG97qsfC5jLFhg3hHKpTxRlW3Q56r+J3VoBuYI3LCDbdQm4EnCL3kaPum0YVRJUiHerwV+9Yt38LYQdPxsmF8Zt+Slr/id8HP76KdB7T/cj6z0uJu4GAHpX+eEBkrY06qf/eNp/MhVw5cJbFGCPeCYLvG2So1XKdjJyiZR5ni/zzzpauaz6hgy+yUN8NMsBtiGCbKlIeZnQehzd6edi2Vq9R9zxQpo1MxkV9Og9s3KbuIw8PbG9Pb1Fs2kWLSZdIHYss/Fq56SbsSMNBeHFnbjXsXBK8wA61M1NgIGFvF6Eo93VO+fhqtGtkmL8ch8G25yqyjKkve0bUcEVgtZoIfWALc3mQxmg3+xy5kmdHeWThP5t44LNjqCCwcOyYydmzN78FY/XrMRVUcH1rT8H/T4VyTqyJIx1qyUvIi/cNZJk3pCXS682vJGcOl/f8FLT+aeYELvTKm/LeustvORWwz1iAx4nqL7q4a1V1wD/Pe37TxPWTIl+JBIU3Fx6Fo6TVexwumUXk6SMFltuDVI=
+  api_key:
+    secure: SwMU6um/sEE1/Iu5Y8VZDkCjgskdhV8ygB2SEo1K8XGtVx5paQrQVsPKmu6f6LhYmgs5BzINXtqCNGVrdGw7emRC+XkC1DdCP9ME1DLFQBp6mo2GcDiUkur4aXFek+bJ1bABe3e7MLRs5KTDxvH5riTHs1Hp5OW+F4YmBUH1C1tgFSN0/k4glGBMaPn5Ub2CPvY1Zw/hMUc9PiB/blFZTQO/FrwzojqOGR5odXY1YIqOEPLnLEHRJF9Xol2PimCNvLlKE52P1ZycMNmqKH9i2iSG27EsKaIRDNMt6u+dv5A8CU21xcleH1WzEzrSbuUOXCHQIoe/gTT/xylaf56jnN7Ln2hH0PeBFFTYzBx85M2NcfhFKMesQl+ren+6zm03igN0Rn1NL8OAWqAsfA0D0eAMXW75RdTiKFdP9owlw9+ZMPSQiA6JPrSOs0+bA2RKlJZ/UQpYzwIrWha31UbDrKg7aCZTZQQgefHFeaalXWTeJscJyuuF45xvLduNtzBU1PEaYsDjrWsjekBs+dpcjvNA5CGJSszfKaV8TYZ0+v+pyO75g+Q4K4w38/oVWcyU0wwX+19Q4AAYv8TwWMH2hHJVJ/mZ5+xR4gJ1gZXgFj/o22uT8a7/EcO3EJSi/koszdahJc0t6dN8vUzp4olBaPzd1qohSZe9DR+dEyVOnw0=
