@@ -1,7 +1,7 @@
 {
   "name": "redux-prefabs-contentful",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Redux-based prefabs for Contentful",
   "keywords": [
     "prefabs",
